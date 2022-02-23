@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="SATO Fumiya">
+    <meta name="description" content="quiz,illsion art">
+    <link rel="stylesheet" href="question.css">
+    <title>錯覚アートクイズ</title>
+</head>
+
+<body>
+    <div id="box1">
+        <p>制限時間は15秒です<br>
+            準備おーけー？
+        </p>
+        <div id="prepar">3</div>
+        <p><button id="start">OK!</button></p>
+    </div>
+
+
+    <h2 id="question">問題が出るよ</h2>
+    <div id="whatQ">koko</div>
+
+
+    <div id="timer">15:00</div>
+
+    <div id="parent">
+        <img src="img/img1.jpg" alt="クイズの画像" id="quiz_img">
+    </div>
+
+    <hr>
+
+    <div id="select">
+        <button type="button" id="slect-0" disabled=true>?</button>
+        <button type="button" id="slect-1" disabled=true>?</button>
+        <button type="button" id="slect-2" disabled=true>?</button>
+        <button type="button" id="slect-3" disabled=true>?</button>
+    </div>
+
+    <div class="next-btn">
+        <div class="box2">
+            <button type="button" id="nextQuiz">次の問題へ</button>
+        </div>
+        <div id="box3">
+            <form method="POST" action="./result2.rb">
+                <button type="submit" name="score_sum" value="" id="score_sum">成績発表へ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ボタン -->
+    <p><input value="解説を表示する" id="btn" type="button" style="margin-top:20px;"></input></p>
+
+
+
+    <!-- 解答 -->
+    <div style="position: relative;">
+        <div id="ans">
+
+        </div>
+
+        <script type="text/javascript" src="question.js"></script>
+</body>
