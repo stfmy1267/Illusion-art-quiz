@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>成績発表</title>
+    <style type="text/css">
+        .fadein {
+            opacity: 0;
+            animation: fadein 3s ease forwards;
+        }
+
+        @keyframes fadein {
+            100% {
+                opacity: 1;
+            }
+        }
+
+        body {
+            margin: 0px;
+            /* background-color: darkkhaki; */
+        }
+
+
+        .text1 {
+            /* background-color: aqua; */
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 500px;
+            font-size: 70px;
+            animation-delay: 1s;
+        }
+
+        .box {
+            position: relative;
+            margin: 0 auto;
+            width: 1200px;
+            height: 400px;
+            /* background-color: dimgrey; */
+        }
+
+        .think {
+            position: absolute;
+            left: 80px;
+            /* background-color: seagreen; */
+            height: 400px;
+            animation-delay: 3s;
+        }
+
+        .text2 {
+            position: absolute;
+            right: 280px;
+            /* background-color: deeppink; */
+            width: 470px;
+            font-size: 70px;
+            animation-delay: 2s;
+        }
+
+        span {
+            font-size: 90px;
+            color: firebrick;
+        }
+
+        .text3 {
+            position: absolute;
+            top: 200px;
+            left: 65%;
+            transform: translate(-65%, -0%);
+            /* background-color: sandybrown; */
+            width: 650px;
+            font-size: 50px;
+            animation-delay: 3s;
+        }
+
+        .return {
+            position: absolute;
+            bottom: 0px;
+            right: 90px;
+        }
+
+        .back {
+            width: 100px;
+            height: 100px;
+            animation-delay: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fadein text1">
+        あなたは・・・
+    </div>
+    <div class="box">
+        <img class="fadein think" src="img/tinking.png" alt="考える人">
+        <div class="fadein text2">
+            <span id="word">天才</span>でした。
+        </div>
+        <div class="fadein text3" id="result"></div>
+        <div class="return">
+            <a href="#" onclick="window.history.back(); return false;"><img class="fadein back" src="img/retrun.png"
+                    alt="戻るボタン"></a>
+        </div>
+    </div>
+    <script src="result.js"></script>
+</body>
+
+</html>

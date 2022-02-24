@@ -245,3 +245,7 @@ $nextbutton.addEventListener('click', (e) => {
         setupQuiz();
     }
 });
+
+$score_sum.addEventListener('click',(e) => {
+    location.href = 'result.html?name=' + encodeURIComponent(score);
+});
